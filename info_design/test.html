@@ -1,125 +1,174 @@
+了解しました。コメントを除去したバージョンを以下に示します。
+
+```html
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TCPとUDPについて</title>
+    <title>情報デザイン手法について</title>
     <style>
         body {
-            font-family: Comic Sans MS, sans-serif; /* Comic Sans MSを使用 */
+            font-family: Comic Sans MS, sans-serif;
             margin: 20px;
-            background-color: #ff0000; /* 原色の背景色 */
-            color: #00ff00; /* 原色の文字色 */
-            text-shadow: 2px 2px 4px #000000; /* 無駄なテキストシャドウ */
+            background-color: #ff0000;
+            color: #00ff00;
+            text-shadow: 2px 2px 4px #000000;
         }
         header {
             text-align: center;
             margin-bottom: 30px;
-            border: 5px dotted #00ff00; /* 無駄な枠線 */
+            border: 5px dotted #00ff00;
             padding: 10px;
-            background: linear-gradient(45deg, #ff0000, #ffff00); /* 無駄なグラデーション背景 */
+            background: linear-gradient(45deg, #ff0000, #ffff00);
         }
         h1 {
-            color: #0000ff; /* 原色の見出し色 */
-            font-size: 3em; /* 無駄に大きなフォントサイズ */
-            text-decoration: underline overline; /* 無駄な装飾 */
+            color: #0000ff;
+            font-size: 3em;
+            text-decoration: underline overline;
         }
         .section {
-            background-color: #ffff00; /* 原色の背景色 */
-            border-radius: 15px; /* 大きな角丸 */
+            background-color: #ffff00;
+            border-radius: 15px;
             padding: 20px;
             margin-bottom: 30px;
-            box-shadow: 10px 10px 5px #888888; /* 無駄なボックスシャドウ */
-            border: 3px dashed #0000ff; /* 無駄な枠線 */
-            transform: rotate(-5deg); /* 無駄に回転 */
+            box-shadow: 10px 10px 5px #888888;
+            border: 3px dashed #0000ff;
+            transform: rotate(-5deg);
         }
         .subsection {
-            color: #ff00ff; /* 原色の色 */
-            border-bottom: 5px double #ff00ff; /* 無駄な枠線 */
+            color: #ff00ff;
+            border-bottom: 5px double #ff00ff;
             padding-bottom: 10px;
             margin-bottom: 20px;
-            background: repeating-linear-gradient(45deg, #ff00ff, #ff00ff 10px, #ffffff 10px, #ffffff 20px); /* 無駄な背景 */
+            background: repeating-linear-gradient(45deg, #ff00ff, #ff00ff 10px, #ffffff 10px, #ffffff 20px);
         }
         .abstract {
             font-style: italic;
-            color: #00ffff; /* 原色の文字色 */
-            background-color: #000; /* 無駄な背景色 */
-            padding: 10px; /* 無駄なパディング */
-            border: 2px solid #00ffff; /* 無駄な枠線 */
-            border-radius: 10px; /* 無駄な角丸 */
+            color: #00ffff;
+            background-color: #000;
+            padding: 10px;
+            border: 2px solid #00ffff;
+            border-radius: 10px;
         }
         .graph {
-            border: 5px groove #ff0000; /* 無駄な境界線 */
+            border: 5px groove #ff0000;
             padding: 20px;
             margin-bottom: 20px;
-            border-radius: 15px; /* 大きな角丸 */
-            background: radial-gradient(circle, #ffff00, #ff0000); /* 無駄な背景 */
+            border-radius: 15px;
+            background: radial-gradient(circle, #ffff00, #ff0000);
         }
         ul {
-            list-style-type: square; /* 無駄なリストスタイル */
-            padding: 20px; /* 無駄なパディング */
-            background-color: #0000ff; /* 原色の背景色 */
-            border: 3px solid #00ff00; /* 無駄な枠線 */
-            border-radius: 10px; /* 無駄な角丸 */
+            list-style-type: square;
+            padding: 20px;
+            background-color: #0000ff;
+            border: 3px solid #00ff00;
+            border-radius: 10px;
         }
         li {
-            margin-bottom: 15px; /* 無駄に大きなマージン */
-            color: #ffff00; /* 原色の文字色 */
+            margin-bottom: 15px;
+            color: #ffff00;
         }
         a {
-            color: #0000ff; /* 原色のリンク色 */
-            text-decoration: blink; /* 無駄なテキストデコレーション */
-            font-weight: bold; /* 無駄に太字 */
-            background-color: #00ffff; /* 無駄な背景色 */
-            padding: 5px; /* 無駄なパディング */
-            border: 2px solid #ff00ff; /* 無駄な枠線 */
-            border-radius: 5px; /* 無駄な角丸 */
+            color: #0000ff;
+            text-decoration: blink;
+            font-weight: bold;
+            background-color: #00ffff;
+            padding: 5px;
+            border: 2px solid #ff00ff;
+            border-radius: 5px;
         }
         a:hover {
-            text-decoration: underline; /* 無駄な装飾 */
-            color: #ff0000; /* ホバー時の原色 */
+            text-decoration: underline;
+            color: #ff0000;
         }
         section {
             margin-bottom: 30px;
-            background: linear-gradient(to right, #ff0000, #ffff00); /* 無駄な背景 */
+            background: linear-gradient(to right, #ff0000, #ffff00);
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>TCPとUDPについて</h1>
+        <h1>情報デザイン手法について - 詳細解説</h1>
     </header>
     <section class="section">
-        <h2 class="subsection">抽象化（サイン）</h2>
+        <h2 class="subsection">本単元の進め方</h2>
         <p class="abstract">
-            TCP（Transmission Control Protocol）とUDP（User Datagram Protocol）は、インターネットプロトコルスイート内の主要な通信プロトコルです。TCPは信頼性の高い接続指向の通信を提供し、UDPは低レイテンシーでの接続レス通信を可能にします。
+            本単元は以下のように進めます。まず、情報デザイン手法の理解を深めます。次に、構造化、抽象化、可視化について説明し、その重要性を学びます。さらに、ユニバーサルデザインの概念についても取り上げ、すべての人が利用しやすいデザインの手法を学びます。その後、実際のWebページ設計についての基礎を学び、最後にHTMLとCSSを用いたWebページの実装について具体的な手法を習得します。
         </p>
     </section>
     <section class="section">
-        <h2 class="subsection">可視化（グラフ化）</h2>
+        <h2 class="subsection">情報デザイン手法の理解</h2>
+        <p>
+            情報デザインとは、情報を分かりやすく伝えるためのデザイン手法です。これには、情報の構造化、抽象化、可視化といった手法が含まれます。構造化とは、情報を整理し、わかりやすくすることを指します。抽象化は、情報の本質を捉え、不要な部分を削ぎ落とすことです。可視化は、情報を視覚的に表現することで、理解を助ける手法です。
+        </p>
+    </section>
+    <section class="section">
+        <h2 class="subsection">構造化・抽象化・可視化についての説明</h2>
+        <p>
+            構造化は、情報を整理し、階層や関連性を明確にすることで、利用者が必要な情報を迅速に見つけることを可能にします。抽象化は、詳細を省略し、重要なポイントに焦点を当てることで、複雑な情報を簡潔に伝えることができます。可視化は、グラフやチャート、図などを使用して情報を視覚的に表現することで、視覚的な理解を助けます。
+        </p>
+    </section>
+    <section class="section">
+        <h2 class="subsection">ユニバーサルデザイン</h2>
+        <p>
+            ユニバーサルデザインは、すべての人が利用しやすいデザインを目指す概念です。これには、年齢や障害の有無にかかわらず、誰もが簡単にアクセスし、利用できるデザインを作成することが含まれます。具体的には、視覚障害者のための色のコントラスト、聴覚障害者のためのテキストトランスクリプトなどが考慮されます。
+        </p>
+    </section>
+    <section class="section">
+        <h2 class="subsection">Webページの設計</h2>
+        <p>
+            Webページの設計は、情報を整理し、利用者が容易にアクセスできるように構造を考えることから始まります。ナビゲーションの設計、コンテンツの配置、色使い、フォントの選択など、多くの要素が関与します。良い設計は、利用者の体験を向上させ、情報を効果的に伝えることができます。
+        </p>
+    </section>
+    <section class="section">
+        <h2 class="subsection">WebページのHTML/CSSによる実装</h2>
+        <p>
+            Webページの実装には、HTMLとCSSの基本的な知識が必要です。HTMLは、Webページの構造を定義する言語であり、CSSはそのスタイルを設定するための言語です。これらを組み合わせることで、見た目が美しく、使いやすいWebページを作成することができます。以下の例は、基本的なHTMLとCSSの構文を示しています。
+        </p>
         <div class="graph">
-            <!-- ここにTCPとUDPの特徴を可視化したグラフを挿入 -->
-            <img src="tcp_udp_graph.png" alt="TCPとUDPの特徴を可視化したグラフ">
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ja"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;サンプルページ&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #1e90ff;
+        }
+        .section {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;サンプルページ&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;section class="section"&gt;
+        &lt;h2&gt;セクション見出し&lt;/h2&gt;
+        &lt;p&gt;ここに内容を追加します。&lt;/p&gt;
+    &lt;/section&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
         </div>
-    </section>
-    <section class="section">
-        <h2 class="subsection">構造化（目次）</h2>
-        <ul>
-            <li><a href="#tcp">TCP（Transmission Control Protocol）</a></li>
-            <li><a href="#udp">UDP（User Datagram Protocol）</a></li>
-        </ul>
-    </section>
-    <section class="section" id="tcp">
-        <h2>TCP（Transmission Control Protocol）</h2>
-        <p>
-            TCPは、信頼性の高い接続指向の通信を提供するプロトコルです。データ送信前に接続を確立し、データが正確に転送されることを保証します。また、データの順序性や再送制御などの機能を提供します。
-        </p>
-    </section>
-    <section class="section" id="udp">
-        <h2>UDP（User Datagram Protocol）</h2>
-        <p>
-            UDPは、接続レスの通信を提供するプロトコルです。データを送信する前に接続を確立する必要がなく、信頼性や順序性は保証されません。その代わりに、低レイテンシーでの高速なデータ転送が可能です。
-        </p>
     </section>
 </body>
 </html>
+```
