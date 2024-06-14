@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCPとUDPについて</title>
+    <style>
+        body {
+            font-family: Comic Sans MS, sans-serif; /* Comic Sans MSを使用 */
+            margin: 20px;
+            background-color: #ff0000; /* 原色の背景色 */
+            color: #00ff00; /* 原色の文字色 */
+            text-shadow: 2px 2px 4px #000000; /* 無駄なテキストシャドウ */
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            border: 5px dotted #00ff00; /* 無駄な枠線 */
+            padding: 10px;
+            background: linear-gradient(45deg, #ff0000, #ffff00); /* 無駄なグラデーション背景 */
+        }
+        h1 {
+            color: #0000ff; /* 原色の見出し色 */
+            font-size: 3em; /* 無駄に大きなフォントサイズ */
+            text-decoration: underline overline; /* 無駄な装飾 */
+        }
+        .section {
+            background-color: #ffff00; /* 原色の背景色 */
+            border-radius: 15px; /* 大きな角丸 */
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 10px 10px 5px #888888; /* 無駄なボックスシャドウ */
+            border: 3px dashed #0000ff; /* 無駄な枠線 */
+            transform: rotate(-5deg); /* 無駄に回転 */
+        }
+        .subsection {
+            color: #ff00ff; /* 原色の色 */
+            border-bottom: 5px double #ff00ff; /* 無駄な枠線 */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            background: repeating-linear-gradient(45deg, #ff00ff, #ff00ff 10px, #ffffff 10px, #ffffff 20px); /* 無駄な背景 */
+        }
+        .abstract {
+            font-style: italic;
+            color: #00ffff; /* 原色の文字色 */
+            background-color: #000; /* 無駄な背景色 */
+            padding: 10px; /* 無駄なパディング */
+            border: 2px solid #00ffff; /* 無駄な枠線 */
+            border-radius: 10px; /* 無駄な角丸 */
+        }
+        .graph {
+            border: 5px groove #ff0000; /* 無駄な境界線 */
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 15px; /* 大きな角丸 */
+            background: radial-gradient(circle, #ffff00, #ff0000); /* 無駄な背景 */
+        }
+        ul {
+            list-style-type: square; /* 無駄なリストスタイル */
+            padding: 20px; /* 無駄なパディング */
+            background-color: #0000ff; /* 原色の背景色 */
+            border: 3px solid #00ff00; /* 無駄な枠線 */
+            border-radius: 10px; /* 無駄な角丸 */
+        }
+        li {
+            margin-bottom: 15px; /* 無駄に大きなマージン */
+            color: #ffff00; /* 原色の文字色 */
+        }
+        a {
+            color: #0000ff; /* 原色のリンク色 */
+            text-decoration: blink; /* 無駄なテキストデコレーション */
+            font-weight: bold; /* 無駄に太字 */
+            background-color: #00ffff; /* 無駄な背景色 */
+            padding: 5px; /* 無駄なパディング */
+            border: 2px solid #ff00ff; /* 無駄な枠線 */
+            border-radius: 5px; /* 無駄な角丸 */
+        }
+        a:hover {
+            text-decoration: underline; /* 無駄な装飾 */
+            color: #ff0000; /* ホバー時の原色 */
+        }
+        section {
+            margin-bottom: 30px;
+            background: linear-gradient(to right, #ff0000, #ffff00); /* 無駄な背景 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TCPとUDPについて</h1>
+    </header>
+    <section class="section">
+        <h2 class="subsection">抽象化（サイン）</h2>
+        <p class="abstract">
+            TCP（Transmission Control Protocol）とUDP（User Datagram Protocol）は、インターネットプロトコルスイート内の主要な通信プロトコルです。TCPは信頼性の高い接続指向の通信を提供し、UDPは低レイテンシーでの接続レス通信を可能にします。
+        </p>
+    </section>
+    <section class="section">
+        <h2 class="subsection">可視化（グラフ化）</h2>
+        <div class="graph">
+            <!-- ここにTCPとUDPの特徴を可視化したグラフを挿入 -->
+            <img src="tcp_udp_graph.png" alt="TCPとUDPの特徴を可視化したグラフ">
+        </div>
+    </section>
+    <section class="section">
+        <h2 class="subsection">構造化（目次）</h2>
+        <ul>
+            <li><a href="#tcp">TCP（Transmission Control Protocol）</a></li>
+            <li><a href="#udp">UDP（User Datagram Protocol）</a></li>
+        </ul>
+    </section>
+    <section class="section" id="tcp">
+        <h2>TCP（Transmission Control Protocol）</h2>
+        <p>
+            TCPは、信頼性の高い接続指向の通信を提供するプロトコルです。データ送信前に接続を確立し、データが正確に転送されることを保証します。また、データの順序性や再送制御などの機能を提供します。
+        </p>
+    </section>
+    <section class="section" id="udp">
+        <h2>UDP（User Datagram Protocol）</h2>
+        <p>
+            UDPは、接続レスの通信を提供するプロトコルです。データを送信する前に接続を確立する必要がなく、信頼性や順序性は保証されません。その代わりに、低レイテンシーでの高速なデータ転送が可能です。
+        </p>
+    </section>
+</body>
+</html>
